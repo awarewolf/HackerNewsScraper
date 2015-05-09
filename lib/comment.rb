@@ -1,12 +1,11 @@
 
-
 class Comment
 
-  attr_reader :body
+  attr_accessor :body, :user_name
 
-  def initialize(body)#, username)
+  def initialize
     @body = body
-    # @username = username
+    @user_name = user_name
   end
 
 end
