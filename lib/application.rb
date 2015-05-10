@@ -26,15 +26,17 @@ class Application
 end
 
 app = Application.new
-current_post = app.create_post
-puts 'TITLE'
-puts current_post.title
-puts 'URL'
-puts current_post.url
+post = app.create_post
+puts "@@@@@@@@\n██╗@@@██╗\n╚██╗@██╔╝\n@╚████╔╝@\n@@╚██╔╝@@\n@@@██║@@@\n@@@╚═╝@@@\n@@@@@@@@"
+puts "HACKER NEWS POST SCRAPER"
+puts "ITEM ID\t\tPOST TITLE"
+puts "#{post.item_id}\t\t#{post.title}"
+puts 'LINK URL'
+puts post.url
 puts 'POINTS'
-puts current_post.points
+puts post.points
 puts 'ITEM ID'
-puts current_post.item_id
-puts "___________________________________________"
+puts
+puts "_________________________________________________________________________"
 puts 'COMMENTS'
-pp current_post.comments
+pp post.comments
